@@ -5,7 +5,7 @@ import 'package:meals/screens/meals.dart';
 import 'package:meals/widgets/categor_grid_item.dart';
 
 class CategoriesScreen extends StatelessWidget {
-  CategoriesScreen({super.key});
+  const CategoriesScreen({super.key});
 
   void _selectCategory(BuildContext context, Category category) {
     final filteredMeals = dummyMeals
@@ -23,9 +23,6 @@ class CategoriesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('pick your category'),
-      ),
       body: GridView(
         padding: EdgeInsets.all(16),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
